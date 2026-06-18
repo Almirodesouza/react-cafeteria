@@ -126,6 +126,6 @@ Acesse **http://localhost:5173** no seu navegador.
 Feito com ☕ por **Almiro de Souza**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Almirodesouza-181717?style=for-the-badge&logo=github)](https://github.com/Almirodesouza)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Almiro_de_Souza-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/almiro-de-souza)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Almiro_de_Souza-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/almirodesouza/)
 
 ---
