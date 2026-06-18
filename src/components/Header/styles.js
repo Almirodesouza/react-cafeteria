@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {GlobalStyles} from '../../styles/GlobalStyles.js'
 
 export const ContainerHeader = styled.div`
     position: fixed;
@@ -17,6 +16,12 @@ export const SectionHeader = styled.section`
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+    @media (max-width: 768px){
+        nav{
+            display: none;
+        }
+    }
 `;
 
 export const ImageLogo = styled.img`
@@ -38,10 +43,9 @@ export const NavLink = styled.a`
 `;
 
 export const IconeHeader = styled.div`
-
     img{
         width: 2rem;
-        margin:1rem;
+        margin: 1rem;
         cursor: pointer;
 
         &:hover{
@@ -50,6 +54,57 @@ export const IconeHeader = styled.div`
 
         &:active{
             opacity: 0.5;
+        }
+    }
+
+    @media (max-width: 768px){
+        display: none;
+    }
+`;
+
+export const ButtonResponsive = styled.div`
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: var(--white);
+        border-radius: 3px;
+        transition: 0.3s ease;
+    }
+
+    ${({ $open }) => $open && `
+        div:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        div:nth-child(2) { opacity: 0; transform: scaleX(0); }
+        div:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    `}
+
+    @media (max-width: 768px){
+        display: flex;
+        
+    }
+`;
+
+export const MobileNav = styled.div`
+    display: none;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: var(--bg);
+
+    ${NavLink}{
+        margin: 0.8rem 0;
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 768px){
+        display: ${({ $open }) => ($open ? "flex" : "none")};
+
+        ${NavLink}{
+            padding: 1.2rem 0;
+            font-size: 1.5rem;
         }
     }
 `;

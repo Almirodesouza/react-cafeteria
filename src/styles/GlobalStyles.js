@@ -28,4 +28,10 @@ export const GlobalStyles = createGlobalStyle`
         max-width: 1200px;
         padding: 3rem 5rem;
     }
+
+    @media (max-width: 768px){
+        :root{
+            font-size: 48%;
+        }
+    }
 `

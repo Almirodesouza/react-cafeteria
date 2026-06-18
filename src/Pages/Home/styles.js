@@ -4,8 +4,12 @@ import ImgHome from '../../assets/home-img.jpg'
 
 export const Container = styled.div`
     min-height: 100vh;
-    max-width: 100vw;
     background-color: var(--bg);
+
+    @media (max-width: 768px) {
+        min-height: 60vh;
+        background-position: right center;
+    }
 `;
 
 export const HomeContainer = styled.div`
@@ -34,11 +38,51 @@ export const HomeSection = styled.div`
         p{
             color: var(--white);
             font-size: 2rem;
-            font-weight: 200;
+            font-weight: 100;
             line-height: 1.8rem;
             padding: 1rem 0;
             text-transform: none;
         }
+
+        @media (max-width: 880px) {
+            max-width: 30rem;
+            padding: 0 1rem;
+
+            h3{
+                color: var(--white);
+                font-size: 4rem;
+                text-transform: none;
+            }
+
+            p{
+                color: var(--white);
+                font-size: 1.5rem;
+                font-weight: 100;
+                line-height: 1.8rem;
+                padding: 1rem 0;
+                text-transform: none;
+            }
+        };
+
+        @media (max-width: 500px) {
+        max-width: 30rem;
+        padding: 0 1rem;
+
+        h3{
+                color: var(--white);
+                font-size: 4rem;
+                text-transform: none;
+        };
+
+        p{
+                color: var(--white);
+                font-size: 1.5rem;
+                font-weight: 100;
+                line-height: 1.8rem;
+                padding: 1rem 0;
+                text-transform: none;
+            }
+    }
 `;
 
 export const SectionAbout = styled.section`
@@ -63,12 +107,21 @@ export const Row = styled.div`
     align-items: center;
     background-color: var(--black);
     gap: 1.5rem;
+
+    @media (max-width: 970px) {
+        flex-direction: column;
+    }
 `;
 
 export const DivImg = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
 
     img{
-        width: 600px;
+        width: 100%;
     }
 `;
 

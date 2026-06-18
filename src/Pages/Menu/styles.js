@@ -24,16 +24,20 @@ export const ContainerMenu = styled.section`
         }
 `;
 
-export const SectionMenu = styled.section`
+export const SectionMenu = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+
+    @media (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    }
 `;
 
 export const BoxMenu = styled.div`
     text-align: center;
     border: var(--border);
-    padding: 4rem;
+    padding: 2rem;
     cursor: pointer;
 
     &:hover{
