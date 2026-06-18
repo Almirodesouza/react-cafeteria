@@ -24,8 +24,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     section{
-        padding: 3rem 2rem;
         margin: 0 auto;
         max-width: 1200px;
+        padding: 3rem 5rem;
     }
 `

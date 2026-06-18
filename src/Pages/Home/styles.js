@@ -12,6 +12,7 @@ export const HomeContainer = styled.div`
     background-image: url(${ImgHome});
     background-size: cover;
     background-position: center;
+    margin-top: 3rem;
 `;
 
 export const Section = styled.section`
@@ -23,8 +24,6 @@ export const Section = styled.section`
 export const HomeSection = styled.div`
     max-width: 60rem;
      padding: 0 4rem;
-    
-
 
         h3{
             color: var(--white);

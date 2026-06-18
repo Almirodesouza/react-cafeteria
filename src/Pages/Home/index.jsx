@@ -2,13 +2,16 @@ import { Container, HomeContainer, Section, HomeSection, SectionAbout, Row, DivI
 import Header from '../../components/Header'
 import Button from '../../components/Button'
 import ImgCafe from "../../assets/cafe-img.jpg"
+import {useNavigate} from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate();
 
   return (
     <Container>
       <Header />
-      <HomeContainer id="home">
+      <HomeContainer>
         <Section>
           <HomeSection>
             <h3>Desperte Seus Sentidos com o Melhor Café da Região</h3>
@@ -16,12 +19,12 @@ function Home() {
               Venha descobrir por que somos a cafeteria favorita de quem valoriza
               um café de verdade — feito com cuidado, servido com carinho.
             </p>
-            <Button  type="button" >Experimente Agora</Button>
+            <Button  type="button" theme="primary" onClick={() => navigate("/menu")}>Experimente Agora</Button>
           </HomeSection>
         </Section>
       </HomeContainer>
 
-      <SectionAbout id="about">
+      <SectionAbout>
         <h2>Sobre <span>Nós</span></h2>
         <Row>
           <DivImg>
@@ -35,7 +38,7 @@ function Home() {
               é apaixonada por café de verdade — por isso, do preparo ao atendimento,
               tudo é feito com cuidado e dedicação. Aqui, você não toma apenas um café.
               Você vive uma experiência.</p>
-            <Button type="button" >Saiba Mais</Button>
+            <Button type="button" onClick = {() => navigate("/menu")}>Saiba Mais</Button>
           </DivInfo>
         </Row>
       </SectionAbout>
