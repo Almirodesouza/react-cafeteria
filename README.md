@@ -35,8 +35,7 @@
 - **Página Endereço** com localização da cafeteria
 - Ícones de carrinho e busca na navbar
 - Identidade visual consistente com tema escuro e paleta dourada/caramelo
-
-> ⚠️ **Observação:** o projeto foi desenvolvido para desktop e **ainda não possui responsividade mobile**. A adaptação para dispositivos móveis está prevista no roadmap.
+- Layout responsivo adaptado para desktop e dispositivos móveis
 
 ---
 
@@ -114,7 +113,7 @@ Acesse **http://localhost:5173** no seu navegador.
 
 ## 🗺️ Roadmap
 
-- [ ] Responsividade mobile completa
+- [x] Responsividade mobile completa
 - [ ] Funcionalidade real de carrinho de compras
 - [ ] Animações e transições entre páginas
 - [ ] Deploy na Vercel ou Netlify
@@ -127,5 +126,6 @@ Acesse **http://localhost:5173** no seu navegador.
 Feito com ☕ por **Almiro de Souza**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Almirodesouza-181717?style=for-the-badge&logo=github)](https://github.com/Almirodesouza)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Almiro_de_Souza-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/almirodesouza/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Almiro_de_Souza-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/almiro-de-souza)
 
+---
