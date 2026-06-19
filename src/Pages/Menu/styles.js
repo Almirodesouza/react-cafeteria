@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { GlobalStyles } from '../../styles/GlobalStyles.js'
 
 export const ContainerMenu = styled.section`
     background-color: var(--bg);
@@ -29,8 +28,12 @@ export const SectionMenu = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
-    @media (max-width: 768px){
+    @media (max-width: 950px){
         grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 520px){
+        grid-template-columns: 1fr;
     }
 `;
 

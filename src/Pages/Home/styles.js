@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { GlobalStyles } from '../../styles/GlobalStyles.js'
 import ImgHome from '../../assets/home-img.jpg'
 
 export const Container = styled.div`

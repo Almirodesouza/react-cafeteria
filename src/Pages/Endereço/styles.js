@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { GlobalStyles } from '../../styles/GlobalStyles.js'
 
 export const SectionEndereco = styled.section`
     background-color: var(--bg);

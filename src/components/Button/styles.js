@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { GlobalStyles } from '../../styles/GlobalStyles.js'
 
 export const MainButton = styled.button`
     background-color: ${props => props.theme === "primary" ? "var(--main-color)" : "transparent"};
